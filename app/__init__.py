@@ -1,0 +1,1 @@
+"""Adaptive Coach application package."""
