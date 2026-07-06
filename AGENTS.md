@@ -64,6 +64,5 @@ interpretation.
 
 ## Current Sprint
 
-Only Sprint 0 — Project foundation is currently in scope. Do not implement business logic,
-provider integrations, persistence, API endpoints, domain models, or agent frameworks
-prematurely.
+Only Sprint 2 — COROS adapter contract is currently in scope. COROS remains read-only. Do not
+implement engines, persistence, API endpoints, LLM integration, or write-back prematurely.
