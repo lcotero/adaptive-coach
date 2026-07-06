@@ -35,3 +35,12 @@ class ActivityAnalysis(BaseModel):
     metrics: tuple[AnalysisMetric, ...]
     execution_score: float | None = Field(default=None, ge=0, le=100)
     evidence: tuple[Evidence, ...]
+
+
+class ActivityAnalysisContext(BaseModel):
+    """Caller-supplied workout structure; no structure is inferred from metrics."""
+
+    model_config = ConfigDict(frozen=True)
+
+    work_lap_indexes: tuple[int, ...] = ()
+    steady_state_confirmed: bool = False

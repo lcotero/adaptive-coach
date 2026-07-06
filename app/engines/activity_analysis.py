@@ -4,17 +4,26 @@ from math import fsum
 from statistics import mean, pstdev
 
 from app.domain import Activity, PlannedWorkout, SessionType
-from app.engines.analysis_models import ActivityAnalysis, AnalysisMetric, Evidence, MetricStatus
+from app.engines.analysis_models import (
+    ActivityAnalysis,
+    ActivityAnalysisContext,
+    AnalysisMetric,
+    Evidence,
+    MetricStatus,
+)
 
 
 def analyze_activity(
-    activity: Activity, planned_workout: PlannedWorkout | None = None
+    activity: Activity,
+    planned_workout: PlannedWorkout | None = None,
+    context: ActivityAnalysisContext | None = None,
 ) -> ActivityAnalysis:
     """Analyze observable execution without inferring physiological causes."""
+    context = context or ActivityAnalysisContext()
     pace = _pace_stability(activity)
-    intervals = _interval_consistency(activity)
+    intervals = _interval_consistency(activity, context)
     decay = _pace_decay(activity)
-    drift = _cardiac_drift(activity)
+    drift = _cardiac_drift(activity, context)
     comparison = _planned_comparison(activity, planned_workout)
     evaluated = [
         metric.value
@@ -47,10 +56,14 @@ def _pace_stability(activity: Activity) -> AnalysisMetric:
     return _metric("pace_stability", max(0, 100 - coefficient * 5), "score_0_100", activity)
 
 
-def _interval_consistency(activity: Activity) -> AnalysisMetric:
+def _interval_consistency(activity: Activity, context: ActivityAnalysisContext) -> AnalysisMetric:
     if activity.session_type not in {SessionType.INTERVAL, SessionType.STRIDES, SessionType.HILLS}:
         return _missing("interval_consistency", "Session is not classified as interval-like.")
-    values = [lap.avg_pace_s_per_km for lap in activity.laps if lap.avg_pace_s_per_km is not None]
+    if not context.work_lap_indexes:
+        return _missing("interval_consistency", "Work laps were not identified explicitly.")
+    work_indexes = set(context.work_lap_indexes)
+    work_laps = [lap for lap in activity.laps if lap.index in work_indexes]
+    values = [lap.avg_pace_s_per_km for lap in work_laps if lap.avg_pace_s_per_km is not None]
     if len(values) < 2:
         return _missing("interval_consistency", "At least two work laps with pace are required.")
     spread = (max(values) - min(values)) / mean(values) * 100
@@ -72,9 +85,11 @@ def _pace_decay(activity: Activity) -> AnalysisMetric:
     )
 
 
-def _cardiac_drift(activity: Activity) -> AnalysisMetric:
+def _cardiac_drift(activity: Activity, context: ActivityAnalysisContext) -> AnalysisMetric:
     if activity.session_type in {SessionType.INTERVAL, SessionType.STRIDES, SessionType.HILLS}:
         return _missing("cardiac_drift", "Interval-like structure invalidates steady-state drift.")
+    if not context.steady_state_confirmed:
+        return _missing("cardiac_drift", "Steady-state structure was not confirmed.")
     pairs = [
         (lap.avg_hr_bpm, lap.avg_pace_s_per_km)
         for lap in activity.laps
