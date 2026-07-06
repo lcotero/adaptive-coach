@@ -63,7 +63,7 @@ Engine                 Engine
 
 ## Estado actual
 
-Sprint 0 — Project foundation
+Sprint 2 — COROS adapter contract complete
 
 ## Desarrollo local
 

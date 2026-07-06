@@ -104,7 +104,7 @@ No business logic.
 
 ## Sprint 1 — Internal Domain Models
 
-Status: NEXT
+Status: COMPLETE
 
 Goal:
 
@@ -136,6 +136,8 @@ Detailed Sprint 1 implementation instructions are defined later in this document
 ---
 
 ## Sprint 2 — COROS Adapter Contract
+
+Status: COMPLETE
 
 Goal:
 
@@ -873,6 +875,6 @@ For each future sprint:
 
 # Current Active Sprint
 
-Sprint 1 — Internal Domain Models
+Sprint 2 — COROS Adapter Contract (COMPLETE)
 
-Do not proceed to Sprint 2 without explicit instruction.
+Do not proceed to Sprint 3 without explicit instruction.
