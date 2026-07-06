@@ -64,5 +64,6 @@ interpretation.
 
 ## Current Sprint
 
-Only Sprint 2 — COROS adapter contract is currently in scope. COROS remains read-only. Do not
-implement engines, persistence, API endpoints, LLM integration, or write-back prematurely.
+Only Sprint 3 — Activity Analysis Engine is currently in scope. COROS remains read-only. Do not
+implement athlete-state, adaptation or safety engines, persistence, API endpoints, LLM
+integration, or write-back prematurely.

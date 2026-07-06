@@ -168,6 +168,8 @@ No engine logic.
 
 ## Sprint 3 — Activity Analysis Engine
 
+Status: COMPLETE
+
 Goal:
 
 Convert completed sessions into structured execution analysis.
@@ -875,6 +877,6 @@ For each future sprint:
 
 # Current Active Sprint
 
-Sprint 2 — COROS Adapter Contract (COMPLETE)
+Sprint 3 — Activity Analysis Engine (COMPLETE)
 
-Do not proceed to Sprint 3 without explicit instruction.
+Do not proceed to Sprint 4 without explicit instruction.
