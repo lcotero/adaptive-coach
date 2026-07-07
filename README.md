@@ -63,7 +63,7 @@ Engine                 Engine
 
 ## Estado actual
 
-Sprint 5 — Adaptation Engine complete
+Sprint 6 — Safety Engine complete
 
 ## Desarrollo local
 

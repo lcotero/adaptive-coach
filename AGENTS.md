@@ -64,5 +64,5 @@ interpretation.
 
 ## Current Sprint
 
-Only Sprint 5 — Adaptation Engine is currently in scope. COROS remains read-only. Do not implement
-safety engines, persistence, API endpoints, LLM integration, or write-back prematurely.
+Only Sprint 6 — Safety Engine is currently in scope. COROS remains read-only. Do not implement
+persistence, API endpoints, LLM integration, Shadow Coach, or write-back prematurely.

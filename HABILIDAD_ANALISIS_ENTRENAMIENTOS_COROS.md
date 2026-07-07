@@ -702,6 +702,21 @@ Señales concretas para modificar o detener una sesión cuando corresponda.
 - No forzar sesiones intensas para compensar incumplimientos.
 - No inventar ritmos o umbrales sin fundamento.
 
+## Validación final antes de recomendar
+
+Antes de presentar una recomendación, pasar la acción propuesta por una lectura de seguridad:
+
+- si hay señales médicas relevantes, bloquear la recomendación de entrenamiento y sugerir
+  evaluación profesional;
+- si el dolor es alto, priorizar descanso y no tratarlo como fatiga común;
+- si el dolor es moderado, degradar la sesión hacia recuperación aunque el plan sea importante;
+- si hay readiness bajo o fatiga marcada, no permitir intensidad de calidad sin degradación;
+- si faltan datos críticos, bajar la confianza y declarar la incertidumbre;
+- si una regla de optimización contradice una regla de seguridad, gana seguridad.
+
+La seguridad puede aprobar, modificar o bloquear una acción. Debe explicar qué regla aplicó y qué
+datos faltan. No debe convertir la salida en diagnóstico médico.
+
 ---
 
 # Estilo de interacción

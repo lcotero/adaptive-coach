@@ -267,6 +267,8 @@ No LLM decision freedom outside allowed actions.
 
 ## Sprint 6 — Safety Engine
 
+Status: COMPLETE
+
 Goal:
 
 Create a final deterministic authority over recommendations.
@@ -881,6 +883,6 @@ For each future sprint:
 
 # Current Active Sprint
 
-Sprint 5 — Adaptation Engine (COMPLETE)
+Sprint 6 — Safety Engine (COMPLETE)
 
-Do not proceed to Sprint 6 without explicit instruction.
+Do not proceed to Sprint 7 without explicit instruction.
