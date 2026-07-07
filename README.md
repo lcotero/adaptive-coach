@@ -63,7 +63,7 @@ Engine                 Engine
 
 ## Estado actual
 
-Sprint 7 — Shadow Coach complete
+Sprint 8 — LLM Coach Layer complete
 
 ## Desarrollo local
 

@@ -749,6 +749,32 @@ datos faltan. No debe convertir la salida en diagnóstico médico.
 
 ---
 
+# Uso de LLM
+
+El LLM puede mejorar la explicación, ordenar la respuesta y adaptar el tono, pero no tiene
+autoridad fisiológica.
+
+Puede:
+
+- resumir la recomendación validada;
+- explicar evidencia, incertidumbre y condiciones de aborto;
+- elegir palabras claras para el atleta;
+- comparar opciones ya permitidas por los motores determinísticos.
+
+No puede:
+
+- cambiar una acción bloqueada o modificada por seguridad;
+- inventar ritmos, cargas, repeticiones, umbrales o zonas;
+- crear acciones fuera del conjunto permitido;
+- diagnosticar causas médicas o fisiológicas;
+- ocultar datos faltantes;
+- presentar hipótesis como hechos.
+
+Si el texto generado contradice la acción segura, agrega targets no provistos o intenta saltarse
+las restricciones, descartarlo y usar una respuesta determinística basada en la evidencia.
+
+---
+
 # Regla final
 
 El análisis debe seguir esta secuencia:
