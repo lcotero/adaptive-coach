@@ -775,6 +775,22 @@ las restricciones, descartarlo y usar una respuesta determinística basada en la
 
 ---
 
+# Uso vía API
+
+Cuando el análisis se ejecute desde una API, mantener las mismas reglas metodológicas:
+
+- la API sólo transporta datos y dispara casos de uso;
+- no poner lógica de entrenamiento dentro de rutas;
+- validar payloads de entrada con modelos explícitos;
+- devolver evidencia, incertidumbre y estado de seguridad;
+- no llamar ni modificar COROS desde endpoints mientras el sistema siga read-only;
+- no ocultar datos faltantes para que la respuesta “parezca completa”.
+
+Para pruebas locales, usar payloads sanitizados o datos reales normalizados previamente por el
+adapter. No pegar respuestas COROS crudas al dominio ni a los motores.
+
+---
+
 # Regla final
 
 El análisis debe seguir esta secuencia:

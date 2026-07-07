@@ -64,5 +64,5 @@ interpretation.
 
 ## Current Sprint
 
-Only Sprint 8 — LLM Coach Layer is currently in scope. COROS remains read-only. Do not implement
-persistence, API endpoints, or write-back prematurely.
+Only Sprint 9 — API Layer is currently in scope. COROS remains read-only. Do not implement
+persistence or write-back prematurely.
