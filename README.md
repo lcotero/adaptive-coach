@@ -63,7 +63,7 @@ Engine                 Engine
 
 ## Estado actual
 
-Sprint 8 — LLM Coach Layer complete
+Sprint 9 — API Layer complete
 
 ## Desarrollo local
 
@@ -100,3 +100,18 @@ python -m mypy app
 ```
 
 También se pueden ejecutar todos los chequeos con `make check`.
+
+## Ejecutar API local
+
+```powershell
+.\.venv\Scripts\python.exe -m uvicorn app.api.main:app --reload
+```
+
+Endpoints iniciales:
+
+- `GET /health`
+- `POST /activity-analysis`
+- `POST /athlete-state`
+- `POST /shadow-recommendation`
+- `POST /llm-coach-prompt`
+- `POST /llm-coach-response`

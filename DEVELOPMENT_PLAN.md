@@ -364,6 +364,8 @@ Provider abstraction should be introduced only at this sprint.
 
 ## Sprint 9 — API Layer
 
+Status: COMPLETE
+
 Goal:
 
 Expose stable application use cases through FastAPI.
@@ -887,6 +889,6 @@ For each future sprint:
 
 # Current Active Sprint
 
-Sprint 8 — LLM Coach Layer (COMPLETE)
+Sprint 9 — API Layer (COMPLETE)
 
-Do not proceed to Sprint 9 without explicit instruction.
+Do not proceed to Sprint 10 without explicit instruction.
