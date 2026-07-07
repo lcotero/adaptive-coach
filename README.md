@@ -63,7 +63,7 @@ Engine                 Engine
 
 ## Estado actual
 
-Sprint 6 — Safety Engine complete
+Sprint 7 — Shadow Coach complete
 
 ## Desarrollo local
 

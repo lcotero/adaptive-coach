@@ -690,6 +690,21 @@ Datos faltantes o hipótesis no confirmadas.
 
 Señales concretas para modificar o detener una sesión cuando corresponda.
 
+## Comparación retrospectiva
+
+Cuando luego exista la actividad realizada, comparar la recomendación shadow con lo ejecutado:
+
+- si se recomendó REST y no hubo actividad, marcar como seguido;
+- si se recomendó REST y hubo actividad, marcar divergencia;
+- si se recomendó RECOVERY_ONLY o REPLACE_WITH_EASY, verificar si lo realizado fue recuperación o
+  rodaje fácil;
+- si se recomendó KEEP, comparar contra el tipo de sesión planificada;
+- si la acción fue reducir volumen, repeticiones o intensidad y no hay datos suficientes para
+  evaluar el ajuste, declarar que la comparación no es evaluable.
+
+La comparación retrospectiva no debe juzgar causalidad. Sirve para auditar si el consejo habría
+sido útil, demasiado agresivo o demasiado conservador.
+
 ---
 
 # Seguridad

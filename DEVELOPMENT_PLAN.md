@@ -288,6 +288,8 @@ The Safety Engine must run before recommendations reach the user.
 
 ## Sprint 7 — Shadow Coach
 
+Status: COMPLETE
+
 Goal:
 
 Produce read-only adaptive recommendations and compare them with actual athlete behavior.
@@ -883,6 +885,6 @@ For each future sprint:
 
 # Current Active Sprint
 
-Sprint 6 — Safety Engine (COMPLETE)
+Sprint 7 — Shadow Coach (COMPLETE)
 
-Do not proceed to Sprint 7 without explicit instruction.
+Do not proceed to Sprint 8 without explicit instruction.
