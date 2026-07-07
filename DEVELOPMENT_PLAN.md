@@ -238,6 +238,8 @@ Weights and thresholds must be explicit, versioned and testable.
 
 ## Sprint 5 — Adaptation Engine
 
+Status: COMPLETE
+
 Goal:
 
 Generate safe, explicit, allowed adaptation actions.
@@ -879,6 +881,6 @@ For each future sprint:
 
 # Current Active Sprint
 
-Sprint 4 — Athlete State Engine (COMPLETE)
+Sprint 5 — Adaptation Engine (COMPLETE)
 
-Do not proceed to Sprint 5 without explicit instruction.
+Do not proceed to Sprint 6 without explicit instruction.

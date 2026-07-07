@@ -63,7 +63,7 @@ Engine                 Engine
 
 ## Estado actual
 
-Sprint 4 — Athlete State Engine complete
+Sprint 5 — Adaptation Engine complete
 
 ## Desarrollo local
 
