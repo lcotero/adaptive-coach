@@ -335,6 +335,8 @@ The output should include:
 
 ## Sprint 8 — LLM Coach Layer
 
+Status: COMPLETE
+
 Goal:
 
 Add contextual interpretation and explanation without giving the LLM physiological authority.
@@ -885,6 +887,6 @@ For each future sprint:
 
 # Current Active Sprint
 
-Sprint 7 — Shadow Coach (COMPLETE)
+Sprint 8 — LLM Coach Layer (COMPLETE)
 
-Do not proceed to Sprint 8 without explicit instruction.
+Do not proceed to Sprint 9 without explicit instruction.
