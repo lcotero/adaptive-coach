@@ -1,6 +1,7 @@
 """Tests for subjective feedback."""
 
 from datetime import UTC, datetime
+from typing import Any, cast
 
 import pytest
 from pydantic import ValidationError
@@ -22,7 +23,10 @@ from app.domain import SubjectiveFeedback
     ],
 )
 def test_feedback_accepts_scale_boundaries(field: str, value: int) -> None:
-    feedback = SubjectiveFeedback(recorded_at=datetime(2026, 7, 1, tzinfo=UTC), **{field: value})
+    feedback = SubjectiveFeedback(
+        recorded_at=datetime(2026, 7, 1, tzinfo=UTC),
+        **cast(Any, {field: value}),
+    )
     assert getattr(feedback, field) == value
 
 
@@ -41,4 +45,7 @@ def test_feedback_accepts_scale_boundaries(field: str, value: int) -> None:
 )
 def test_feedback_rejects_values_outside_scales(field: str, value: int) -> None:
     with pytest.raises(ValidationError):
-        SubjectiveFeedback(recorded_at=datetime(2026, 7, 1, tzinfo=UTC), **{field: value})
+        SubjectiveFeedback(
+            recorded_at=datetime(2026, 7, 1, tzinfo=UTC),
+            **cast(Any, {field: value}),
+        )
