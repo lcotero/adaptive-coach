@@ -34,7 +34,7 @@ def test_snapshot_aggregates_nested_models() -> None:
     )
     snapshot = AthleteSnapshot(
         snapshot_at=observed_at,
-        recent_activities=[activity],
+        recent_activities=(activity,),
         training_load=TrainingLoadState(short_term_load=300, observed_at=observed_at),
         recovery=RecoveryState(recovery_score=75, observed_at=observed_at),
         planned_workout=PlannedWorkout(

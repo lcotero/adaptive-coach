@@ -63,7 +63,7 @@ Engine                 Engine
 
 ## Estado actual
 
-Sprint 2 — COROS adapter contract complete
+Sprint 3 — Activity Analysis Engine complete
 
 ## Desarrollo local
 

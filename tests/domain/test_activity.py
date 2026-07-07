@@ -1,6 +1,7 @@
 """Tests for completed activities and laps."""
 
 from datetime import UTC, datetime
+from typing import Any, cast
 
 import pytest
 from pydantic import ValidationError
@@ -18,7 +19,7 @@ def test_valid_activity_construction_and_serialization() -> None:
         duration_s=1800,
         distance_m=6000,
         perceived_effort=4,
-        laps=[lap],
+        laps=(lap,),
     )
 
     assert activity.laps == (lap,)
@@ -37,7 +38,7 @@ def test_valid_activity_construction_and_serialization() -> None:
 )
 def test_invalid_lap_values(model: type[ActivityLap], kwargs: dict[str, object]) -> None:
     with pytest.raises(ValidationError):
-        model(**kwargs)
+        model(**cast(Any, kwargs))
 
 
 def test_activity_rejects_negative_duration() -> None:
