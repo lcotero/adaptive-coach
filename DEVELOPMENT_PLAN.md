@@ -194,6 +194,8 @@ Real athlete scenarios may be used as sanitized fixtures.
 
 ## Sprint 4 — Athlete State Engine
 
+Status: COMPLETE
+
 Goal:
 
 Separate short-term readiness from longer-term training state.
@@ -877,6 +879,6 @@ For each future sprint:
 
 # Current Active Sprint
 
-Sprint 3 — Activity Analysis Engine (COMPLETE)
+Sprint 4 — Athlete State Engine (COMPLETE)
 
-Do not proceed to Sprint 4 without explicit instruction.
+Do not proceed to Sprint 5 without explicit instruction.

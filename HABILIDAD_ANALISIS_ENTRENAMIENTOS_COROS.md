@@ -340,6 +340,18 @@ Un atleta puede tener:
 
 No confundir ambos conceptos.
 
+Para evaluar readiness, ponderar señales del día: recuperación, sueño, HRV respecto de su
+baseline, dolor, estrés, sensaciones y ejecución reciente. Si faltan señales críticas, declarar
+incertidumbre en vez de fabricar un estado extremo.
+
+Para evaluar training state, mirar la respuesta al bloque: ratio de carga, tendencia de
+recuperación, ejecución de sesiones recientes, consistencia y contexto del macrociclo. Estados
+como RETURNING, TAPERING o RACE_READY requieren contexto explícito; no deben inferirse sólo desde
+métricas fisiológicas.
+
+Una mala señal diaria puede bajar readiness sin demostrar sobrecarga crónica. Una buena señal
+diaria tampoco borra fatiga acumulada del bloque.
+
 ---
 
 # Método de análisis de una actividad

@@ -63,7 +63,7 @@ Engine                 Engine
 
 ## Estado actual
 
-Sprint 3 — Activity Analysis Engine complete
+Sprint 4 — Athlete State Engine complete
 
 ## Desarrollo local
 
