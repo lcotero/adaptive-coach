@@ -64,6 +64,5 @@ interpretation.
 
 ## Current Sprint
 
-Only Sprint 4 — Athlete State Engine is currently in scope. COROS remains read-only. Do not
-implement adaptation or safety engines, persistence, API endpoints, LLM integration, or write-back
-prematurely.
+Only Sprint 5 — Adaptation Engine is currently in scope. COROS remains read-only. Do not implement
+safety engines, persistence, API endpoints, LLM integration, or write-back prematurely.

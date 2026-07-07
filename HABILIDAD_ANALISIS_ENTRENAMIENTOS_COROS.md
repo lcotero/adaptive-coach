@@ -528,6 +528,28 @@ Posibles acciones:
 - Ser conservador cuando varias señales independientes apuntan a fatiga.
 - La seguridad tiene prioridad sobre la optimización.
 
+## Selección de acciones
+
+Elegir siempre una acción explícita y explicar por qué:
+
+- KEEP: mantener la sesión cuando readiness, training state y contexto sostienen el plan.
+- REDUCE_VOLUME: bajar duración, distancia o volumen total sin aumentar intensidad.
+- REDUCE_REPETITIONS: mantener el tipo de estímulo, pero con menos repeticiones de trabajo.
+- REDUCE_INTENSITY: conservar estructura general, pero bajar la exigencia del estímulo.
+- REPLACE_WITH_EASY: cambiar una sesión de calidad por rodaje fácil.
+- RECOVERY_ONLY: limitar la sesión a recuperación muy suave o movilidad.
+- REST: descanso cuando el estado diario no justifica entrenar.
+
+No inventar ritmos, cargas, repeticiones nuevas ni objetivos alternativos. La acción define la
+dirección del ajuste; los detalles concretos deben surgir de umbrales conocidos, plan existente o
+criterio explícito del coach.
+
+Si hay sesiones perdidas, no sumar volumen a la sesión siguiente. Evaluar el estado actual y
+continuar desde ahí. Recuperar continuidad tiene prioridad sobre “pagar deuda” de entrenamiento.
+
+En sesiones clave o semanas de taper, preservar el objetivo cuando el estado del atleta lo permite.
+Si varias señales independientes apuntan a deterioro, degradar la sesión aunque sea importante.
+
 ---
 
 # Uso del contexto personal del atleta

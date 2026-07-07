@@ -1,6 +1,13 @@
 """Deterministic training engines."""
 
 from app.engines.activity_analysis import analyze_activity
+from app.engines.adaptation import DEFAULT_ADAPTATION_THRESHOLDS, select_adaptation
+from app.engines.adaptation_models import (
+    AdaptationAction,
+    AdaptationContext,
+    AdaptationDecision,
+    AdaptationThresholds,
+)
 from app.engines.analysis_models import (
     ActivityAnalysis,
     ActivityAnalysisContext,
@@ -19,7 +26,12 @@ from app.engines.state_models import (
 )
 
 __all__ = [
+    "DEFAULT_ADAPTATION_THRESHOLDS",
     "DEFAULT_STATE_THRESHOLDS",
+    "AdaptationAction",
+    "AdaptationContext",
+    "AdaptationDecision",
+    "AdaptationThresholds",
     "ActivityAnalysis",
     "ActivityAnalysisContext",
     "AthleteStateAssessment",
@@ -33,4 +45,5 @@ __all__ = [
     "TrainingState",
     "analyze_activity",
     "assess_athlete_state",
+    "select_adaptation",
 ]
